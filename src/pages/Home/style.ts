@@ -2,27 +2,17 @@ import { makeStyles, Theme, createStyles } from "@material-ui/core";
 
 export default makeStyles((theme: Theme) => {
   return createStyles({
-    homeBodyStyle: {
-      marginTop: 50,
-      padding: 10,
+    link: {
+      textDecoration: 'none'
     },
-    cardStyles: {
-      background: "#444",
-      borderRadius: 10,
-      boxShadow: "none",
-      marginTop: 20,
-    },
-    watchButton: {
-      color: "#ddd",
-      textDecoration: "none",
-      margin: 8,
-    },
-    writes: {
-      color: "#fff",
-    },
-
-    writes2: {
-      color: "grey",
-    },
+    AnimationFadeOutUp: {
+      from: {
+        opacity: 1
+      },
+      to: {
+        opacity: 0,
+        transform: `translate3d(0, '-2000px', 0)`
+      }
+    }
   });
 });

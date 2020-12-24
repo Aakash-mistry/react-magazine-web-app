@@ -4,7 +4,7 @@ const Config = {
   },
 
   get SERVER_URL() {
-    return `https://jsonplaceholder.typicode.com`;
+    return `http://localhost:8080/api/1.0`;
   },
 };
 

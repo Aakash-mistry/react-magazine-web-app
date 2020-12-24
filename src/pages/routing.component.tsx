@@ -2,15 +2,10 @@ import * as React from "react";
 import { Route, Switch } from "react-router-dom";
 
 // importing pages
-
-// Home page
-import Home from "./Home";
-
-// Photo pages
+import Home from "./Home/";
 import ShowPhotos from "./Photo/";
-
-// Album Photo pages
-import Albums from "./Album";
+import Albums from "./Album/";
+import Chart from "./Chart/";
 
 const Routing: React.FC = () => {
      return (
@@ -18,6 +13,7 @@ const Routing: React.FC = () => {
                <Route exact path='/' component={Home} />
                <Route path='/photos' component={ShowPhotos} />
                <Route path='/albums' component={Albums} />
+               <Route path='/charts' component={Chart} />
           </Switch>
      );
 };
